@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Translate is using primarily for moving the items on the x and y-axis.-->
     <translate
         android:fromYDelta="100%"
         android:toYDelta="0%"
         android:duration="500"
         />
-
+    <!--Alpha is using for determining the opacity.-->
     <alpha
         android:fromAlpha="0.0"
         android:toAlpha="1.0"
         android:duration="500"/>
 
+    <!--Scale property is using for scaling the items up and down.
+    50% value for both pivots represents the center of the item.
+    FromScale and ToScale attributes are using to scale the item.
+    1 for original size and 0 for beginning size.-->
     <scale
         android:pivotX="50%"
         android:pivotY="50%"
@@ -19,6 +24,5 @@
         android:toXScale="1"
         android:toYScale="1"
         android:duration="500"
-
         />
 </set>
