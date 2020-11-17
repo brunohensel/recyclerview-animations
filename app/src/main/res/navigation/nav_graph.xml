@@ -9,5 +9,15 @@
         android:id="@+id/mainFragment"
         android:name="com.example.recyclerviewanimations.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_animationOneFragment"
+            app:destination="@id/animationOneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/animationOneFragment"
+        android:name="com.example.recyclerviewanimations.animationOne.AnimationOneFragment"
+        android:label="fragment_animation_one"
+        tools:layout="@layout/fragment_animation_one" />
 </navigation>
