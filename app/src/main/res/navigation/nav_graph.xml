@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_mainFragment_to_animationOneFragment"
             app:destination="@id/animationOneFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_animationTwoFragment"
+            app:destination="@id/animationTwoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_animationThreeFragment"
+            app:destination="@id/animationThreeFragment" />
     </fragment>
 
     <fragment
@@ -20,4 +26,14 @@
         android:name="com.example.recyclerviewanimations.animationOne.AnimationOneFragment"
         android:label="fragment_animation_one"
         tools:layout="@layout/fragment_animation_one" />
+    <fragment
+        android:id="@+id/animationTwoFragment"
+        android:name="com.example.recyclerviewanimations.animationTwo.AnimationTwoFragment"
+        android:label="fragment_animation_two"
+        tools:layout="@layout/fragment_animation_two" />
+    <fragment
+        android:id="@+id/animationThreeFragment"
+        android:name="com.example.recyclerviewanimations.animationThree.AnimationThreeFragment"
+        android:label="fragment_animation_three"
+        tools:layout="@layout/fragment_animation_three" />
 </navigation>

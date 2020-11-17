@@ -16,7 +16,15 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         R.id.action_mainFragment_to_animationOneFragment
       )
     }
-    animationTwo.setOnClickListener {}
-    animationThree.setOnClickListener {}
+    animationTwo.setOnClickListener {
+      findNavController().navigate(
+        R.id.action_mainFragment_to_animationTwoFragment
+      )
+    }
+    animationThree.setOnClickListener {
+      findNavController().navigate(
+        R.id.action_mainFragment_to_animationThreeFragment
+      )
+    }
   }
 }
