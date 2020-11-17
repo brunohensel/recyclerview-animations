@@ -7,11 +7,11 @@ import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    super.onViewCreated(view, savedInstanceState)
 
-        animationOne.setOnClickListener {}
-        animationTwo.setOnClickListener {}
-        animationThree.setOnClickListener {}
-    }
+    animationOne.setOnClickListener {}
+    animationTwo.setOnClickListener {}
+    animationThree.setOnClickListener {}
+  }
 }
