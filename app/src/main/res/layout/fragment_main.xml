@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/indigo"
     tools:context=".MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/animationOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/on_indigo"
+        android:text="Animation ONE"
+        app:layout_constraintBottom_toTopOf="@+id/animationTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/animationTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/on_indigo"
+        android:text="Animation TWO"
+        app:layout_constraintBottom_toTopOf="@+id/animationThree"
+        app:layout_constraintStart_toStartOf="@+id/animationOne"
+        app:layout_constraintTop_toBottomOf="@+id/animationOne" />
+
+    <Button
+        android:id="@+id/animationThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/on_indigo"
+        android:text="Animation THREE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/animationTwo"
+        app:layout_constraintTop_toBottomOf="@+id/animationTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
